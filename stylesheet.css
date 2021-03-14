@@ -99,11 +99,24 @@ h2 {
 
 /* section 3- about */
 #about {
-  background: linear-gradient(to right, rgb(0, 0, 104), rgb(0, 0, 70));
+  background: linear-gradient(to top left, rgb(0, 0, 59), rgb(0, 0, 167));
+  background-size: 400% 400%;
+  animation: bgcolor 9s ease infinite;
   color: white;
   padding: 1%;
 }
 
+@keyframes bgcolor {
+  0% {
+    background-position: 19% 0%;
+  }
+  50% {
+    background-position: 82% 100%;
+  }
+  100% {
+    background-position: 19% 0%;
+  }
+}
 #about h2 {
   margin-bottom: 5%;
 }
